@@ -11,6 +11,6 @@ dfcalificaciones ["status"] = dfcalificaciones["promedio"].apply (lambda x: "apr
 dfcalificaciones
 
 st.dataframe(dfcalificaciones)
-fig = px.bar(drresultados, x='status', y=dfresultados["status"].value_counts())
+ = px.bar(dfresultados, x=["aprobado","reprobado"], y=dfresultados["status"].value_counts())
 st.plotly_chart(fig)
                                                       
